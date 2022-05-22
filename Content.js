@@ -1,6 +1,5 @@
-var script = document.createElement("script");
-script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
-document.getElementsByTagName("head")[0].appendChild(script);
+let source = document.querySelector("source").getAttribute("src");
+console.log(source);
 
 var delay = 1000;
 function closeFullscreen() {
@@ -24,15 +23,3 @@ setTimeout(function () {
     qtiContent.classList.remove("disabled");
   }
 }, delay);
-
-// setTimeout(function () {
-//   window.addEventListener("DOMContentLoaded", (event) => {
-//     let source = document.querySelectorAll("source").getAttribute("src");
-//     console.log(source);
-//   });
-// }, 3000);
-
-window.addEventListener("DOMContentLoaded", (event) => {
-  let source = document.querySelector("source").getAttribute("src");
-  console.log(source);
-});
