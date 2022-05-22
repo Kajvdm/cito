@@ -26,8 +26,8 @@ setTimeout(function () {
 }, delay);
 
 setInterval(function () {
-  var source = document.querySelectorAll("source").getAttribute("src");
+  var source = document.querySelector("source").getAttribute("src");
   console.log(source);
-  var source2 = document.querySelectorAll("source").src;
+  var source2 = document.querySelector("source").src;
   console.log(source2);
 }, 3000);
