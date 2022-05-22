@@ -26,6 +26,8 @@ setTimeout(function () {
 }, delay);
 
 setInterval(function () {
-  var source = $(".plyr__video-wrapper").find("source").attr("src");
+  var source = document.querySelectorAll("source").getAttribute("src");
   console.log(source);
+  var source2 = document.querySelectorAll("source").src;
+  console.log(source2);
 }, 3000);
