@@ -26,10 +26,10 @@ setTimeout(function () {
 }, delay);
 
 // setTimeout(function () {
-//   var source = document.querySelector("source").getAttribute("src");
-//   console.log(source);
-//   var source2 = document.querySelector("source").src;
-//   console.log(source2);
+//   window.addEventListener("DOMContentLoaded", (event) => {
+//     let source = document.querySelectorAll("source").getAttribute("src");
+//     console.log(source);
+//   });
 // }, 3000);
 
 window.addEventListener("DOMContentLoaded", (event) => {
