@@ -33,6 +33,6 @@ setTimeout(function () {
 // }, 3000);
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  let source = document.querySelectorAll("source").getAttribute("src");
+  let source = document.querySelector("source").getAttribute("src");
   console.log(source);
 });
